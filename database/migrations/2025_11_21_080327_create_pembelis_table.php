@@ -10,9 +10,9 @@ return new class extends Migration
     {
         Schema::create('pembelis', function (Blueprint $table) {
             $table->id();
-            $table->string('name');      // Nama Pembeli
-            $table->string('email')->unique(); // Email Pembeli
-            $table->string('password');  // Password
+            $table->string('name');      
+            $table->string('email')->unique(); 
+            $table->string('password');  
             $table->timestamps();
         });
     }

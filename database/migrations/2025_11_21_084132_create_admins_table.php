@@ -13,7 +13,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->enum('super_admin', ['0', '1'])->default('0'); // Sesuai modul [Cite: 701]
+            $table->enum('super_admin', ['0', '1'])->default('0'); 
             $table->timestamps();
         });
     }
